@@ -32,13 +32,13 @@ router.post("/register", (req, res) => {
         var transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: 'bhushankoyande446@gmail.com',
-                pass: 'football12345678'
+                user: 'your-email-here',
+                pass: 'your-password-here'
             }
         });
 
         var mailOptions = {
-            from: 'bhushankoyande446@gmail.com',
+            from: 'your-email-here',
             to: doc.email,
             subject: 'Welcome !',
             text: 'Thanks for joining us at ChatCord. '
